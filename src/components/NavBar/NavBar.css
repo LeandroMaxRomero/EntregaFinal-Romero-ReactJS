@@ -1,0 +1,10 @@
+.img-papa{
+    height: 10rem;
+    border: 0.2rem solid brown;
+    border-right: none;
+    border-top: none;
+  }
+  h1, h2, h4, hr{
+    text-align: center;
+    color: brown;
+  }

@@ -1,0 +1,18 @@
+.contenedor-carrito{
+    margin-right: 30px;
+  }
+  .carrito{
+    display: flex;
+    flex-direction: column;
+  }
+  .cantidad-carrito{
+    font-size: 2rem;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    line-height: initial;
+    height: 3rem;
+    width: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 30%;
+  }
