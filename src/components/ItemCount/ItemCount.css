@@ -1,0 +1,17 @@
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+}
+.textoContador{
+    width: 2rem;
+    text-align: center;
+}
+
+.botonAgregar{
+    margin: 5px auto;
+}
+.botonAgregar .btn-warning{
+    --bs-btn-bg: #cb6d1a;
+    --bs-btn-border-color: white;
+    --bs-btn-color: white;
+}

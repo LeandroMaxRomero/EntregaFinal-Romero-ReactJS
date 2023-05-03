@@ -1,0 +1,6 @@
+.contenedor-detalles{
+    display: flex;
+    justify-content: center;
+    background-color: #cb6d1a;
+    padding: 20px 10px;
+}

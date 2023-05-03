@@ -1,0 +1,22 @@
+.itemCard{
+    margin: 10px auto;
+}
+.itemName{
+    text-align: center;
+    margin: 4px auto;
+    font-weight: bold;
+    color: brown;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn-warning{
+    --bs-btn-bg:brown;
+}
+
+.itemBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.botonesCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+}
+.botonVolver{
+    margin: 5px auto;
+}
+.botonVolver .btn-warning{
+    --bs-btn-bg: rgb(78, 78, 78);
+    --bs-btn-border-color: black;
+    --bs-btn-color: white;
+}
+.cardNombre{
+    font-weight: bold;
+    color: brown;
+}
