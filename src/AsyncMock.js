@@ -32,7 +32,7 @@ const productos =[
         nombre: 'Gabriela',
         imagen: 'https://cipotato.org/papaenecuador/wp-content/uploads/sites/6/2017/10/4.jpg',
         categoria: 'mejoradas',
-        descripcion: 'descripcion La variedad INIAP-Gabriela es una papa para consumo en fresco (puré y tortillas). El tamaño del tubérculo es de mediano a grande, de forma oval. La piel es rosada intensa y crema alrededor de las yemas, con ojos superficiales. La pulpa es crema.papa 4',
+        descripcion: 'La variedad INIAP-Gabriela es una papa para consumo en fresco (puré y tortillas). El tamaño del tubérculo es de mediano a grande, de forma oval. La piel es rosada intensa y crema alrededor de las yemas, con ojos superficiales. La pulpa es crema.',
         stock: 11,
         precio: 58
     },
@@ -50,7 +50,7 @@ const productos =[
         nombre: 'Fripapa 99',
         imagen: 'https://cipotato.org/papaenecuador/wp-content/uploads/sites/6/2017/10/6.jpg',
         categoria: 'mejoradas',
-        descripcion: 'La variedad INIAP-Fripapa 99 es una papa para procesamiento (papa frita en forma de hojuelas y de tipo francesa) y consumo en fresco (sopas y puré). Los tubérculos son grandes, de forma oblonga de color rosado intenso, con ojos superficiales y bien distribuidos. La pulpa es amarilla',
+        descripcion: 'La variedad INIAP-Fripapa 99 es una papa para procesamiento (papa frita en forma de hojuelas y de tipo francesa) y consumo en fresco (sopas y puré). Los tubérculos son grandes, de forma oblonga de color rosado intenso, con ojos superficiales y bien distribuidos. La pulpa es amarilla. LLEGUE HASTA ACA',
         stock: 12,
         precio: 61
     },    

@@ -1,13 +1,28 @@
 
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/esm/Button';
 import ItemCount from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 import './ItemDetail.css'
+import { CartContext } from '../../context/CartContext';
 
 export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, precio}) => {
+
+  const [cantidadAgregada, setCantidadAgregada] = useState(0)
+
+  const {agregarItem} = useContext(CartContext)
+
+  const  handleOnAdd = (cantidad) => {
+    setCantidadAgregada(cantidad)
+
+    const item = {id, nombre, precio}
+
+    agregarItem(item, cantidad)
+  }
 
   const navigate = useNavigate()
 
@@ -30,7 +45,18 @@ export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, p
         <ListGroup.Item>Variedad: <strong>{categoria}</strong></ListGroup.Item>
       </ListGroup>
       <Card.Body className='botonesCard'>
-      <ItemCount valorInicial={1} stock={stock} onAdd={(contador)=> console.log(contador)} />
+        <>
+        {
+          cantidadAgregada > 0
+          ?
+          <Button variant="warning" className='Button'>
+            <Nav.Link as={Link} to={`/cart`} className='botonTerminar'>Finalizar compra</Nav.Link>
+          </Button>
+          :
+          <ItemCount valorInicial={1} stock={stock} onAdd={handleOnAdd} />
+        }
+        </>
+
       <div className='botonVolver'>
         <Button variant="warning" className='Button' onClick={onBack}>
           <p>Volver atrás</p>

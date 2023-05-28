@@ -15,3 +15,7 @@
     --bs-btn-border-color: white;
     --bs-btn-color: white;
 }
+.btn.btn-warning{
+    color: white;
+    font-weight: bolder;
+}

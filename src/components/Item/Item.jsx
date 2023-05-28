@@ -5,7 +5,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './Item.css';
 
-export const Item = ({id, nombre, imagen, categoria, descripcion, stock, precio}) => {
+export const Item = ({id, nombre, imagen, categoria, stock, precio}) => {
   return (
     <Card className='itemCard' style={{ width: '18rem', margin: '10px auto' }}>
 
@@ -24,10 +24,16 @@ export const Item = ({id, nombre, imagen, categoria, descripcion, stock, precio}
             <Card.Text>
                 Stock: <strong>{stock} bolsas</strong> de 50 Kg. 
             </Card.Text>
+            
+            <Card.Text>
+                Variedad: <strong>{categoria}</strong> 
+            </Card.Text>
 
-            <Button variant='warning'>
-              <Link className='botonDetalle' to={`/item/${id}`}>Ver detalles</Link>
-            </Button>
+            
+              <Link className='botonDetalle' to={`/item/${id}`}>
+                <Button variant='warning'>Ver detalles</Button>
+              </Link>
+            
 
             
 

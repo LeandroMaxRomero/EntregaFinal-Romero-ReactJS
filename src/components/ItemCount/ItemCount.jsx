@@ -31,7 +31,7 @@ function ItemCount({valorInicial, stock, onAdd}) {
   return (
     <div className='contenedor-botones'>
       <ButtonGroup aria-label="Basic example">
-          <Boton
+          <Boton className='simboloContador'
             cambiaContador = { () => decrementaContador(1) }
             text = {" - "}
           />
