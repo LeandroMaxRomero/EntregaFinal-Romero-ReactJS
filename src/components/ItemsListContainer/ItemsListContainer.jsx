@@ -1,13 +1,12 @@
 import '../ItemsListContainer/ItemsListContainer.css'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-// import { getProductos, getProductosByCategoria } from '../../AsyncMock'
 import { ItemList } from '../ItemList/ItemList'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
 
 
-const ItemsListContainer = () => {
+ export const ItemsListContainer = () => {
 
     const [productos, setProductos] = useState([]);
 
@@ -15,26 +14,37 @@ const ItemsListContainer = () => {
 
     const {categoriaId} = useParams()
 
-
     useEffect(() => {
-
-        setLoading(true)
-
-        const coleccionPorCategoria = query(collection(db, 'Items'), where('categoria', '==', 'categoriaId'))
-
-        const collectionRef = categoriaId ? coleccionPorCategoria : collection(db, 'Items')
-
-
-        getDocs(collectionRef)
-            .then(response =>{ 
-                setProductos(response.docs.map(doc =>({ id: doc.id, ...doc.data() })))
+        setLoading(true);
+      
+        if (categoriaId) {
+          const coleccionPorCategoria = query(collection(db, 'Items'), where('categoria', '==', categoriaId));
+      
+          getDocs(coleccionPorCategoria)
+            .then((response) => {
+              setProductos(response.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
             })
-            .catch(error => {
-                console.log(error)})
-            .finally(()=>{
-                setLoading(false)
+            .catch((error) => {
+              console.log(error);
             })
-    }, [categoriaId]);
+            .finally(() => {
+              setLoading(false);
+            });
+        } else {
+          const collectionRef = collection(db, 'Items');
+      
+          getDocs(collectionRef)
+            .then((response) => {
+              setProductos(response.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+            })
+            .catch((error) => {
+              console.log(error);
+            })
+            .finally(() => {
+              setLoading(false);
+            });
+        }
+      }, [categoriaId]);
 
     if(loading){
         return(
