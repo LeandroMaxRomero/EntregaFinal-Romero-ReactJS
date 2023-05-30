@@ -84,7 +84,7 @@ export const CheckoutForm = ({onConfirm}) => {
             </FormGroup>
 
             <Button variant="warning" type="submit">
-              Submit
+              Generar orden de compra
             </Button>
         </form>
     </div>

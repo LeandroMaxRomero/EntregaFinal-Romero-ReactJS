@@ -7,8 +7,10 @@ import Button from 'react-bootstrap/esm/Button';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
-import './ItemDetail.css'
 import { CartContext } from '../../context/CartContext';
+import './ItemDetail.css'
+import { BsCartCheck, BsReplyAllFill } from "react-icons/bs"
+
 
 export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, precio}) => {
 
@@ -51,6 +53,7 @@ export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, p
           ?
           <Button variant="warning" className='Button'>
             <Nav.Link as={Link} to={`/cart`} className='botonTerminar'>Finalizar compra</Nav.Link>
+            <p p className='texto-boton-tarjeta'> <BsCartCheck /></p>
           </Button>
           :
           <ItemCount valorInicial={1} stock={stock} onAdd={handleOnAdd} />
@@ -59,7 +62,8 @@ export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, p
 
       <div className='botonVolver'>
         <Button variant="warning" className='Button' onClick={onBack}>
-          <p>Volver atrás</p>
+          <p className='texto-boton-tarjeta'> Volver atrás </p>
+          <p className='texto-boton-tarjeta'> <BsReplyAllFill /> </p>
         </Button>
       </div>
       </Card.Body>

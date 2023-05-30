@@ -4,15 +4,24 @@
   .carrito{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .cantidad-carrito{
-    font-size: 2rem;
-    color: white;
-    background-color: brown;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
     text-align: center;
-    line-height: initial;
-    height: 3rem;
-    width: 3rem;
+    line-height: 1em;
+    height: 2rem;
+    width: 2rem;
     border: 0.2rem solid black;
     border-radius: 30%;
+  }
+  .navbar-expand-lg .navbar-collapse{
+    margin: auto 4rem;
+  }
+  a.nav-link{
+    margin-right: 4rem;
   }

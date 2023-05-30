@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { useState } from 'react';
 import './ItemCount.css'
+import { BsFillCartPlusFill, BsFillBagDashFill, BsFillBagPlusFill } from "react-icons/bs"
 
 function ItemCount({valorInicial, stock, onAdd}) {
 
@@ -30,21 +31,22 @@ function ItemCount({valorInicial, stock, onAdd}) {
   
   return (
     <div className='contenedor-botones'>
-      <ButtonGroup aria-label="Basic example">
-          <Boton className='simboloContador'
+      <ButtonGroup aria-label="Basic example" className='simboloContador'>
+          <Boton 
             cambiaContador = { () => decrementaContador(1) }
-            text = {" - "}
+            text = {<BsFillBagDashFill/>}
           />
               <div className='textoContador'><strong> {contador} </strong></div>
           <Boton 
             cambiaContador = { () => aumentaContador(1) }
-            text = {" + "}
+            text = {<BsFillBagPlusFill/>}
           />
       </ButtonGroup>
 
       <div className='botonAgregar'>
         <Button  variant="warning" className='Button' onClick={() => onAdd(contador)}>
-            <p>Agregar a carrito</p>
+            <p className='texto-boton-tarjeta'>Agregar a carrito</p>
+            <p className='texto-boton-tarjeta'>< BsFillCartPlusFill /></p>
         </Button>
       </div>
     </div>

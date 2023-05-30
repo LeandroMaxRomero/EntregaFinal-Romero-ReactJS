@@ -5,14 +5,21 @@
     margin: 0 10px;
 }
 .botonVolver{
-    margin: 5px auto;
+    margin: 5px auto !important;
 }
 .botonVolver .btn-warning{
-    --bs-btn-bg: rgb(78, 78, 78);
+    --bs-btn-bg: rgb(240, 93, 35);
     --bs-btn-border-color: black;
     --bs-btn-color: white;
 }
 .cardNombre{
     font-weight: bold;
     color: brown;
+}
+.botonTerminar{
+   margin-right: 0px !important;
+}
+
+.texto-boton-tarjeta{
+    margin-bottom: 0px;
 }

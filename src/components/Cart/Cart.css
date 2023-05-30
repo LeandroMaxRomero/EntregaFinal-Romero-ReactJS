@@ -1,0 +1,33 @@
+.container-cart{
+    background-color: #cb6d1a;
+    min-height: 750px;
+}
+.cartVacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+.texto-cartVacio{
+    color: white;
+    margin-bottom: 2rem;
+}
+.texto-cartTotal{
+    color: white;
+
+}
+.container-subtotales{
+    display: flex;
+    flex-direction: column;
+}
+.container-totales{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+    padding-right: 10%;
+}
+.boton-vaciar{
+    width: 30% !important;
+}

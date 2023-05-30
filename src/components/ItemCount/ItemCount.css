@@ -3,8 +3,9 @@
     flex-direction: column;
 }
 .textoContador{
-    width: 2rem;
+    width: 4rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .botonAgregar{
@@ -12,10 +13,14 @@
 }
 .botonAgregar .btn-warning{
     --bs-btn-bg: #cb6d1a;
-    --bs-btn-border-color: white;
+    --bs-btn-border-color: black;
     --bs-btn-color: white;
 }
 .btn.btn-warning{
     color: white;
     font-weight: bolder;
+}
+.simboloContador{
+    width: fit-content !important;
+    align-self: center;
 }

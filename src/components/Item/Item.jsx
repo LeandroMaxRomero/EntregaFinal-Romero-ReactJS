@@ -18,15 +18,15 @@ export const Item = ({id, nombre, imagen, categoria, stock, precio}) => {
             <Card.Img className='itemImg' variant="top" src={imagen}/>
 
             <Card.Text>
-                Precio: <strong>U$S {precio}</strong> por bolsa. 
+              <strong className='subtitulos'>Precio: </strong><strong>U$S {precio}</strong> por bolsa.
             </Card.Text>
 
             <Card.Text>
-                Stock: <strong>{stock} bolsas</strong> de 50 Kg. 
+            <strong className='subtitulos'>Stock: </strong><strong>{stock} bolsas</strong> de 50 Kg.
             </Card.Text>
             
             <Card.Text>
-                Variedad: <strong>{categoria}</strong> 
+            <strong className='subtitulos'>Categoría: </strong><strong>{categoria}</strong> 
             </Card.Text>
 
             

@@ -11,12 +11,25 @@ a{
     text-decoration: none;
     color: white;
 }
+.btn:hover{
+    color: black !important;
+}
 .btn-warning{
     --bs-btn-bg:brown;
+    --bs-btn-border-color:black;
 }
+
 
 .itemBody{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.botonDetalle{
+    align-self: center;
+}
+.subtitulos{
+    display: inline;
+    color:rgb(223, 78, 11);
+    font-weight: bold;
 }

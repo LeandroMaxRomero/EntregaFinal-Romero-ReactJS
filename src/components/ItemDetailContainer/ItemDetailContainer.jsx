@@ -37,9 +37,9 @@ export const ItemDetailContainer = () => {
 
     if(loading){
         return(
-            <div>
+            <div className='container-loading'>
                 <div className='lds-dual-ring'></div>
-                <h3>Loading...</h3>
+                <h3 className='texto-loading' >Loading...</h3>
             </div>
         )
     }
