@@ -27,3 +27,13 @@
     display: flex;
     justify-content: space-between;
 }
+.imgDetalle{
+    max-height: 200px;
+    width: fit-content;
+    margin-top: 5%;
+    padding: 0px;
+    align-self: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3),
+                15px 15px 15px rgba(0, 0, 0, 0.3);
+}

@@ -48,3 +48,12 @@
 .texto-loading{
   color: white;
 }
+.itemCard{
+  display: grid !important;
+  grid-template-rows: 1fr 8fr;
+}
+
+.card-text{
+  margin-bottom: 0;
+  align-self: center;
+}

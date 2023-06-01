@@ -34,7 +34,7 @@ export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, p
 
   return (
     <Card style={{ width: '30rem' }}>
-      <Card.Img variant="top" src={imagen}/>
+      <Card.Img className='imgDetalle' variant="top" src={imagen}/>
       <Card.Body>
         <Card.Title className='cardNombre'>{nombre}</Card.Title>
         <Card.Text>

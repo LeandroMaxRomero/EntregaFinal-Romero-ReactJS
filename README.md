@@ -20,6 +20,10 @@ Enlace del deploy: [Web App de E-commerce](https://entrega-final-romero-react-le
 
 **En la terminal del proyecto, puede ejecutar:**
 
+
+### `npm install`
+Descarga todas las dependencias necesarias para correr la aplicación en la carpeta `node_modeles`.
+
 #### `npm start`
 Corre la aplicación en modo desarrollador.\
 Abre [http://localhost:3000](http://localhost:3000) para visualizarlo en su navegador.
