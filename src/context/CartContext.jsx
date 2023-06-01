@@ -13,6 +13,7 @@ export const CartProvider = ({children}) => {
             setCart( prev => [...prev, {...item, cantidad}])
         } else {
             console.error('El producto ya fue agregado')
+            alert('El producto ya fue agregado')
         }
     }
 

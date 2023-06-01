@@ -1,19 +1,19 @@
 # E-commerce - Proyecto ReactJS Coderhouse
 
-Enlace del deploy: [Web App de E-commerce](blank:#https://entrega-final-romero-react-5t3rknte4-leandromaxromero.vercel.app//).
+Enlace del deploy: [Web App de E-commerce](https://entrega-final-romero-react-leandromaxromero.vercel.app).
 
 ## Herramientas, frameworks y librerías
 
-[![Generic badge](https://img.shields.io/badge/node-v18.14-lemon.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/npm-8.19.2-darkred.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/react-^18.2.0-aqua.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/react--bootstrap-^2.7.2-cyan.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/react--dom-^18.2.0-aquamarine.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/react--icons-^4.7.1-deeppink.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/react--router--dom-^6.11.0-crimson.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/react--scripts-5.0.1-cadetblue.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/bootstrap-^5.2.3-blueviolet.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/firebase-^9.22.1-orangered.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/node-v18.14-lemon.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/npm-8.19.2-darkred.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/react-^18.2.0-aqua.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/react--bootstrap-^2.7.2-cyan.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/react--dom-^18.2.0-aquamarine.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/react--icons-^4.7.1-deeppink.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/react--router--dom-^6.11.0-crimson.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/react--scripts-5.0.1-cadetblue.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/bootstrap-^5.2.3-blueviolet.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/firebase-^9.22.1-orangered.svg)](https://shields.io/)\
 
 
 ## Comandos

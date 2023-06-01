@@ -73,7 +73,7 @@ export const Checkout = () => {
     if (loading) {
         return(
         <>
-            <h2 className='loadingOrden'>Su orden está siendo genrada...</h2>
+            <h2 className='loadingOrden'>Su orden está siendo generada...</h2>
             <div className='lds-dual-ring'></div>
         </>
         )
@@ -91,8 +91,9 @@ export const Checkout = () => {
 
     return (
         <>
-            <div className='ContainerAbsolute'>
-                <h1 className='CheckoutTittle'> Checkout </h1>
+            <div className='container-checkout'>
+                <h2 className='Checkout-titulo'> Checkout </h2>
+                <div className='Checkout-enunciado'> Por favor, complete con sus datos personales para recibir su orden de compra </div>
                 <CheckoutForm onConfirm={crearOrden}/>
             </div>
         </>

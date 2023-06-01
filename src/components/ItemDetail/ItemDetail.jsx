@@ -42,9 +42,9 @@ export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, p
         </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>Precio en U$S/bolsa: <strong>{precio}</strong></ListGroup.Item>
-        <ListGroup.Item>Stock en bolsas de 50 Kg: <strong>{stock}</strong> </ListGroup.Item>
-        <ListGroup.Item>Variedad: <strong>{categoria}</strong></ListGroup.Item>
+        <ListGroup.Item className='tarjeta-item'><strong className='subtitulos'>Precio unitario: </strong><strong>U$S {precio}</strong></ListGroup.Item>
+        <ListGroup.Item className='tarjeta-item'><strong className='subtitulos'>Stock en bolsas de 50 Kg: </strong><strong>{stock} u.</strong> </ListGroup.Item>
+        <ListGroup.Item className='tarjeta-item'><strong className='subtitulos'>Variedad: </strong><strong>{categoria}</strong></ListGroup.Item>
       </ListGroup>
       <Card.Body className='botonesCard'>
         <>
@@ -53,7 +53,7 @@ export const ItemDetail = ({id, nombre, imagen, categoria, descripcion, stock, p
           ?
           <Button variant="warning" className='Button'>
             <Nav.Link as={Link} to={`/cart`} className='botonTerminar'>Finalizar compra</Nav.Link>
-            <p p className='texto-boton-tarjeta'> <BsCartCheck /></p>
+            <p className='texto-boton-tarjeta'> <BsCartCheck /></p>
           </Button>
           :
           <ItemCount valorInicial={1} stock={stock} onAdd={handleOnAdd} />

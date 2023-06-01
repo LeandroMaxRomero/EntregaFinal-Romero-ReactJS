@@ -45,8 +45,8 @@ function ItemCount({valorInicial, stock, onAdd}) {
 
       <div className='botonAgregar'>
         <Button  variant="warning" className='Button' onClick={() => onAdd(contador)}>
-            <p className='texto-boton-tarjeta'>Agregar a carrito</p>
-            <p className='texto-boton-tarjeta'>< BsFillCartPlusFill /></p>
+            <div className='texto-boton-tarjeta'>Agregar a carrito</div>
+            <div className='texto-boton-tarjeta'>< BsFillCartPlusFill /></div>
         </Button>
       </div>
     </div>

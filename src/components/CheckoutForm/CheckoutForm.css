@@ -1,0 +1,17 @@
+.formulario{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 75%;
+    text-align: center;
+}
+.container-formulario{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: #f79845;
+    margin: 1.5rem 10%;
+    border-radius: 5px 40px;
+}
+.boton-generar{
+    margin: 20px 0;
+}

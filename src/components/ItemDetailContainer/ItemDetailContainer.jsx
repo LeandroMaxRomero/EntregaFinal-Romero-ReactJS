@@ -1,14 +1,10 @@
 
 import './ItemDetailContainer.css'
 import { useEffect, useState } from 'react'
-// import { getProductoById } from '../../AsyncMock'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
-
-
-
 
 export const ItemDetailContainer = () => {
 

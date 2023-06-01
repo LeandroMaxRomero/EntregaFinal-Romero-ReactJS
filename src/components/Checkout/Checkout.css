@@ -22,3 +22,15 @@
       transform: rotate(360deg);
     }
   }
+  .container-checkout{
+    background-color: #cb6d1a;
+    min-height: 50rem;
+  }
+  .Checkout-titulo, .Checkout-enunciado{
+    color:white;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  .Checkout-enunciado{
+    font-size: 1.4rem;
+  }

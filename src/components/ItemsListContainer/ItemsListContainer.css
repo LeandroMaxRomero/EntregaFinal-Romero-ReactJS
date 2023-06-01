@@ -42,7 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50rem;
+  min-height: 50rem;
   background-color: #cb6d1a; 
 }
 .texto-loading{

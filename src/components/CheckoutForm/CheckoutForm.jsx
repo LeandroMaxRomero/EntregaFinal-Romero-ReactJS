@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './CheckoutForm.css'
-import { Button, FormControl, FormGroup, FormLabel, FormText } from 'react-bootstrap'
-// import { Form } from 'react-router-dom'
+import { Button, FormControl, FormGroup, FormLabel} from 'react-bootstrap'
+import { BsReceiptCutoff } from "react-icons/bs";
 
 
 
@@ -30,7 +30,7 @@ export const CheckoutForm = ({onConfirm}) => {
     }
 
   return (
-    <div>
+    <div className='container-formulario' >
         <form onSubmit={handleConfirm} className='formulario'>
 
             <FormGroup className="mb-3" controlId="formBasicEmail">
@@ -64,9 +64,6 @@ export const CheckoutForm = ({onConfirm}) => {
                 onChange={({ target }) => setEmailUsuario(target.value)}
                 required 
                  />
-                <FormText className="text-muted">
-                  Ingrese su dirección de correo electrónico
-                </FormText>
             </FormGroup>
 
             <FormGroup className="mb-3" controlId="formBasicEmail">
@@ -78,13 +75,10 @@ export const CheckoutForm = ({onConfirm}) => {
                 onChange={({ target }) => setConfirmarEmailUsuario(target.value)}
                 required 
                  />
-                <FormText className="text-muted">
-                  Confirme su dirección de correo electrónico
-                </FormText>
             </FormGroup>
 
-            <Button variant="warning" type="submit">
-              Generar orden de compra
+            <Button className='boton-generar' variant="warning" type="submit">
+              Generar orden de compra ___<BsReceiptCutoff/>_
             </Button>
         </form>
     </div>

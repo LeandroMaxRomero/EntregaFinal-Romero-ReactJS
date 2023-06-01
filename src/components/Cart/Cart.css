@@ -14,20 +14,26 @@
     margin-bottom: 2rem;
 }
 .texto-cartTotal{
-    color: white;
+    color: rgb(8, 8, 8);
+    font-size: 1.6rem;
+    text-shadow: 1px 1.5px 1px yellow;
 
 }
 .container-subtotales{
     display: flex;
     flex-direction: column;
 }
-.container-totales{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: center;
-    padding-right: 10%;
+.boton-eliminar.vaciar{
+    background-color: yellow !important;
+    color: black;
 }
-.boton-vaciar{
-    width: 30% !important;
+.tabla-oscura{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.boton-checkout{
+    background-color: rgb(114, 12, 209);
+}
+.boton-checkout:hover{
+    background-color: rgb(147, 66, 223);
 }
