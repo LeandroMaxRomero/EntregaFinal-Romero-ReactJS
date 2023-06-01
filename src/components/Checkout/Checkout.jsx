@@ -86,7 +86,8 @@ export const Checkout = () => {
         return (
         <div className='container-orden'>
             <h2 className='titulo-ordenID'>El ID de su orden es: <strong className='texto-ordenId'>{ordenId}</strong></h2>
-            <h3> Muchas gracias por confiar en nosotros. Guarde su número de orden para poder hacer un seguimiento de la compra efectuada.</h3>
+            <h3 className='subtitulo-ordenID' > Muchas gracias por confiar en nosotros.</h3> 
+            <h3 className='subtitulo-ordenID'> Guarde su número de orden para poder hacer un seguimiento de la compra efectuada.</h3>
             <Nav.Link as={Link} to={`/`} className='link-cartVacio' > 
                 <Button variant='warning'>
                     <BsChevronDoubleLeft/> Volver a la tienda <BsChevronDoubleRight/>

@@ -17,7 +17,7 @@ function NavBar() {
           </Nav.Link>
 
           <Navbar.Brand className='navbar-titulo'>
-              <h1>¡Pa la papa!</h1>
+              <h1>¡Apa la papa!</h1>
               <hr></hr>
               <h2>La mayor tienda de papa del mundo</h2>
           </Navbar.Brand>

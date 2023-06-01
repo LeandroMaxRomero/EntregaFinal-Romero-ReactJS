@@ -48,8 +48,15 @@
   }
   .texto-ordenId{
     font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    background-color: white;
+    color: #cb6d1a;
   }
 
   .titulo-ordenID{
     margin-bottom: 2rem;
+  }
+  .subtitulo-ordenID{
+    color: rgb(75, 75, 75);
+    margin-bottom: 1.5rem;
   }
