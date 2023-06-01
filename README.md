@@ -1,6 +1,6 @@
 # E-commerce - Proyecto ReactJS Coderhouse
 
-Enlace del deploy: [Web App de E-commerce](https://entrega-final-romero-react-leandromaxromero.vercel.app).
+Enlace del deploy: [Web App de E-commerce](https://entrega-final-romero-react-js.vercel.app).
 
 ## Herramientas, frameworks y librerías
 
