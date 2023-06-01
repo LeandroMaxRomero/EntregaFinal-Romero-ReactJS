@@ -24,8 +24,9 @@
   }
   .container-checkout{
     background-color: #cb6d1a;
-    min-height: 50rem;
+    min-height: 750px;
   }
+  
   .Checkout-titulo, .Checkout-enunciado{
     color:white;
     padding-top: 1.5rem;
@@ -33,4 +34,24 @@
   }
   .Checkout-enunciado{
     font-size: 1.4rem;
+  }
+  /* .container-loading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50rem;
+    background-color: #cb6d1a; 
+  }*/
+  .container-orden{
+    background-color: #cb6d1a;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+  }
+  .texto-ordenId{
+    font-family: 'Times New Roman', Times, serif;
   }

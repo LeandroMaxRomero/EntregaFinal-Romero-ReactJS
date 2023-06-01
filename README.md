@@ -13,12 +13,12 @@ Enlace del deploy: [Web App de E-commerce](https://entrega-final-romero-react-le
 [![Generic badge](https://img.shields.io/badge/react--router--dom-^6.11.0-crimson.svg)](https://shields.io/)\
 [![Generic badge](https://img.shields.io/badge/react--scripts-5.0.1-cadetblue.svg)](https://shields.io/)\
 [![Generic badge](https://img.shields.io/badge/bootstrap-^5.2.3-blueviolet.svg)](https://shields.io/)\
-[![Generic badge](https://img.shields.io/badge/firebase-^9.22.1-orangered.svg)](https://shields.io/)\
+[![Generic badge](https://img.shields.io/badge/firebase-^9.22.1-orangered.svg)](https://shields.io/)
 
 
 ## Comandos
 
-**El la terminal del proyecto, puede ejecutar:**
+**En la terminal del proyecto, puede ejecutar:**
 
 #### `npm start`
 Corre la aplicación en modo desarrollador.\

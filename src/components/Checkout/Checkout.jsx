@@ -4,6 +4,8 @@ import { CartContext } from "../../context/CartContext"
 import { Timestamp, addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
 import { CheckoutForm } from '../CheckoutForm/CheckoutForm'
+import { Button, Nav } from 'react-bootstrap'
+import { BsChevronDoubleLeft, BsChevronDoubleRight } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 
 export const Checkout = () => {
@@ -72,19 +74,23 @@ export const Checkout = () => {
 
     if (loading) {
         return(
-        <>
-            <h2 className='loadingOrden'>Su orden está siendo generada...</h2>
+        <div className='container-loading' >
+            <h2 className='texto-loading'>Su orden está siendo generada...</h2>
             <div className='lds-dual-ring'></div>
-        </>
+        </div>
         )
         
     }
 
     if (ordenId) {
         return (
-        <div className='ContainerId'>
-            <h1 className='ContainerId__order'>El ID de su orden es: {ordenId}</h1>
-            <Link to="/" className='ContainerId__Back'>Back to top</Link>
+        <div className='container-orden'>
+            <h2 className='Checkout-titulo'>El ID de su orden es: <strong className='texto-ordenId'>{ordenId}</strong></h2>
+            <Nav.Link as={Link} to={`/`} className='link-cartVacio' > 
+                <Button variant='warning'>
+                    <BsChevronDoubleLeft/> Volver a la tienda <BsChevronDoubleRight/>
+                </Button> 
+            </Nav.Link>
         </div>
         );
     }
